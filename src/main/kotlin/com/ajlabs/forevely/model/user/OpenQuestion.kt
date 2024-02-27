@@ -1,0 +1,19 @@
+package com.ajlabs.forevely.model.user
+
+enum class OpenQuestion {
+    ACHIEVEMENT,
+    HISTORICAL_ERA,
+    IMPACTFUL_BOOK,
+    UNWIND_METHOD,
+    DINNER_GUEST,
+    LEARN_SKILL,
+    CHILDHOOD_MEMORY,
+    SPONTANEOUS_ACT,
+    BIGGEST_FEAR,
+    PASSION,
+    PERFECT_DAY,
+    LAUGHTER_MOMENT,
+    PEACE_SOURCE,
+    CHANGE_WORLD,
+    FAVORITE_QUOTE;
+}

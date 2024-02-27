@@ -1,0 +1,77 @@
+[versions]
+jvmTarget = "17"
+# --------------
+bcrypt = "0.10.2"
+detekt = "1.23.0"
+expedia = "7.0.2"
+javalin = "4.6.8"
+junit = "5.10.0"
+kermit = "2.0.2"
+kluent = "1.73"
+koin = "3.5.0"
+koinKtor = "3.5.1"
+kotlin = "1.9.20"
+kover = "0.7.4"
+ktLint = "11.6.1"
+ktor = "2.3.5"
+libPhoneNumber = "8.13.26"
+logback = "1.4.11"
+mail = "1.4"
+mockk = "1.13.8"
+mongodb = "4.11.1"
+shadow = "7.1.2"
+testContainers = "1.19.1"
+
+[libraries]
+expedia-server = { module = "com.expediagroup:graphql-kotlin-server", version.ref = "expedia" }
+expedia-ktor-server = { module = "com.expediagroup:graphql-kotlin-ktor-server", version.ref = "expedia" }
+expedia-federation = { module = "com.expediagroup:graphql-kotlin-federation", version.ref = "expedia" }
+
+graphql-scalars = "com.graphql-java:graphql-java-extended-scalars:20.2"
+
+javalin-core = { module = "io.javalin:javalin", version.ref = "javalin" }
+
+kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
+
+koin-ktor = { module = "io.insert-koin:koin-ktor", version.ref = "koinKtor" }
+koin-logger = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinKtor" }
+
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-content = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
+ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+ktor-server-auth = { module = "io.ktor:ktor-server-auth", version.ref = "ktor" }
+ktor-server-auth-jwt = { module = "io.ktor:ktor-server-auth-jwt", version.ref = "ktor" }
+ktor-server-cio = { module = "io.ktor:ktor-server-cio-jvm", version.ref = "ktor" }
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
+ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
+ktor-server-logging = { module = "io.ktor:ktor-server-call-logging-jvm", version.ref = "ktor" }
+ktor-server-websocket = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor" }
+
+validator-libPhoneNumber = { module = "com.googlecode.libphonenumber:libphonenumber", version.ref = "libPhoneNumber" }
+validator-mail = { module = "javax.mail:mail", version.ref = "mail" }
+
+server-bcrypt = { module = "at.favre.lib:bcrypt", version.ref = "bcrypt" }
+server-logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+server-mongodb = { module = "org.mongodb:mongodb-driver-kotlin-coroutine", version.ref = "mongodb" }
+
+# TESTING
+test-kluent = { module = "org.amshove.kluent:kluent", version.ref = "kluent" }
+test-koin = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+test-kotlin-ktor-server = { module = "io.ktor:ktor-server-tests", version.ref = "ktor" }
+test-kotlin-ktor-serverHost = { module = "io.ktor:ktor-server-test-host", version.ref = "ktor" }
+test-testContainers-mongo = { module = "org.testcontainers:mongodb", version.ref = "testContainers" }
+test-testContainers-junit = { module = "org.testcontainers:junit-jupiter", version.ref = "testContainers" }
+
+test-junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+test-junit-jupiter-params = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "junit" }
+test-junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+test-mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+[plugins]
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+ktLint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktLint" }
