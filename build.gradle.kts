@@ -74,7 +74,7 @@ dependencies {
     testRuntimeOnly(libs.test.junit.jupiter.engine)
     testRuntimeOnly(libs.test.junit.jupiter.params)
     testImplementation(libs.test.mockk)
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
 }
 
 configure<KtlintExtension> {
